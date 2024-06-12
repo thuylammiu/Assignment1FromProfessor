@@ -25,7 +25,7 @@ namespace AppointmentBooking.Repositoties
 
         public async Task<IList<T>> GetAll()
         {
-            return await dbSet.ToListAsync();
+            return await dbSet.Include("Patient").ToListAsync();
         }
 
         public async Task<IList<T>> GetWithFilter(Expression<Func<T, bool>>? filter, string include = "")
@@ -37,7 +37,7 @@ namespace AppointmentBooking.Repositoties
 
             if (!String.IsNullOrEmpty(include))
             {
-                query.Include(include);
+                query= query.Include(include);
             }
                
 

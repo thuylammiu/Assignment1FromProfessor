@@ -136,3 +136,4 @@ c:\MyProgram\Job2024\Assigment\Assigment1\AppointmentBooking\AppointmentBooking\
 c:\MyProgram\Job2024\Assigment\Assigment1\AppointmentBooking\AppointmentBooking\obj\Debug\net8.0\ref\AppointmentBooking.dll
 c:\MyProgram\Job2024\Assigment\Assigment1\AppointmentBooking\AppointmentBooking\bin\Debug\net8.0\Mapster.dll
 c:\MyProgram\Job2024\Assigment\Assigment1\AppointmentBooking\AppointmentBooking\bin\Debug\net8.0\Mapster.Core.dll
+C:\MyProgram\Job2024\Assigment\Assigment1\AppointmentBooking\AppointmentBooking\obj\Debug\net8.0\AppointmentBooking.sourcelink.json

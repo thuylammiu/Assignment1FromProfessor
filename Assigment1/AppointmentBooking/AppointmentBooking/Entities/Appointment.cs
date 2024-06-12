@@ -19,7 +19,7 @@ namespace AppointmentBooking.Entities
         [ForeignKey(nameof(Dentist))]
         public int DentistId { get; set; }
 
-        [ForeignKey(nameof(PatientId))]
+        [ForeignKey(nameof(Patient))]
         public int PatientId { get; set; }
 
 

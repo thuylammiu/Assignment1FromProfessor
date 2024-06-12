@@ -1,6 +1,7 @@
 ﻿using AppointmentBooking.Dtos;
 using AppointmentBooking.Entities;
 using AppointmentBooking.Interfaces;
+using AppointmentBooking.Repositoties;
 using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -62,8 +63,8 @@ namespace AppointmentBooking.Controllers
         [Route("GetListVipAppointment")]
         public async Task<ActionResult<IList<AppointmentDto>>> GetListVipAppointment()
         {
-            Expression<Func<Patient, bool>> myLambda = (s) => s.DateOfBirth.Year < DateTime.Now.Year - 65;
-            var entities = await patientRepository.GetWithFilter(myLambda, "Patients");
+            Expression<Func<Appointment, bool>> myLambda = (s) => DateTime.Now.Year - s.Patient.DateOfBirth.Year > 65;
+            var entities = await appointmentRepository.GetWithFilter(myLambda, "Patient");            
             var result = entities.Adapt<IList<AppointmentDto>>();
             return Ok(result);
         }
@@ -72,8 +73,9 @@ namespace AppointmentBooking.Controllers
         [Route("UpCommingEvents")]
         public async Task<ActionResult<IList<AppointmentDto>>> UpCommingEvents()
         {
-            Expression<Func<Appointment, bool>> myLambda = (s) => s.AppointmentDate.ToDateTime(new TimeOnly()) > DateTime.Now;
-            var entities = await appointmentRepository.GetWithFilter(myLambda, "Patients");
+            var now = new DateOnly(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+            Expression<Func<Appointment, bool>> myLambda = (s) => s.AppointmentDate > now;
+            var entities = await appointmentRepository.GetWithFilter(myLambda, "Patient");
             var result = entities.Adapt<IList<AppointmentDto>>();
             return Ok(result);
         }

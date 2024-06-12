@@ -10,11 +10,6 @@ namespace AppointmentBooking.Repositoties
         {
         }
 
-        public async Task<IList<Appointment>> GetAllAsync()
-        {
-            var list = await base.GetAll();
-            return null;//list.Where(x => x.AppointmentDate > DateOnly.FromDateTime(DateTime.Now));
-
-        }
+        
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj": {}
+    "C:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj": {}
   },
   "projects": {
-    "c:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj": {
+    "C:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj",
+        "projectUniqueName": "C:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj",
         "projectName": "AppointmentBooking",
-        "projectPath": "c:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj",
+        "projectPath": "C:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\AppointmentBooking.csproj",
         "packagesPath": "C:\\Users\\lam98\\.nuget\\packages\\",
-        "outputPath": "c:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\obj\\",
+        "outputPath": "C:\\MyProgram\\Job2024\\Assigment\\Assigment1\\AppointmentBooking\\AppointmentBooking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
